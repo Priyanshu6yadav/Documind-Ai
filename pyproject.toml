@@ -1,0 +1,25 @@
+[project]
+name = "documind-ai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Priyanshu Yadav", email = "priyanshu8yadav@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "langchain>=1.4.5",
+    "langchain-chroma>=1.1.0",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.6.10",
+    "langchain-ollama>=1.1.0",
+    "langgraph>=1.2.15",
+    "pypdf>=6.20.1",
+]
+
+[project.scripts]
+documind-ai = "documind_ai:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
